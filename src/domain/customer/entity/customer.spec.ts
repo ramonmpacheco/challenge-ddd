@@ -45,7 +45,7 @@ describe("Customer unit tests", () => {
         }).toThrowError("Address is mandatory to activate a customer");
     });
 
-    it("should throw error when name is and id are empty", () => {
+    it("should throw error when name and id are empty", () => {
         expect(() => {
             let customer = new Customer("", "");
         }).toThrowError("customer: Id is required,customer: Name is required");
